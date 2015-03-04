@@ -1,0 +1,423 @@
+body {
+    background-color: #4E4E4E;
+    text-align: center;
+    padding: 0;
+    margin: 0;         /* make sure IE centers the page too */
+}
+ 
+#wrapper {
+    width: 900px;
+    margin: 0 auto;             /* center the page */
+}
+ 
+#content {
+    background-color: #fff;
+    border: 1px solid #000;
+    float: left;
+    padding: 20px 30px;
+    text-align: left;
+    width: 900px;                /* fill up the entire div */
+}
+ 
+#menu {
+    float: left;
+    border-bottom: none;        /* avoid a double border */
+    clear: both;                /* clear:both makes sure the content div doesn't float next to this one but stays under it */
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 0 30px;
+    background-color: #00728B;
+    text-align: left;
+    font-size: 85%;
+    
+}
+ 
+#menu a:hover {
+    background-color: #009FC1;
+}
+ 
+#userbar {
+    background-color: #00728B;
+    float: right;
+    width: 250px;
+    padding-right: 80px;
+}
+ 
+#footer {
+    clear: both;
+}
+
+.loginbox {
+    width: 300px;
+    height: 100px;
+    border: 1px #ccc solid;
+    margin: 0 auto;
+    padding: 20px;
+}
+ 
+.item {
+    background-color: #00728B;  
+    color: #FFF;
+    font-family: Arial;
+    padding: 17px;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+}
+ 
+.leftpart {
+    width: 70%;
+}
+ 
+.rightpart {
+    width: 30%;
+}
+ 
+.small {
+    font-size: 75%;
+    color: #373737;
+}
+#footer {
+    font-size: 65%;
+    padding: 3px 0 0 0;
+}
+ 
+.topic-post {
+    height: 100px;
+    overflow: auto;
+}
+.post-content-section {
+    width: 60%;
+    height: auto;
+    float: left;
+
+}
+ 
+.post-content {
+    padding-bottom: ;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+    float: left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.post-content h1 {
+    margin: 0;
+    font-size: 22px;
+    font-family: helvetica;
+    font-color: black;
+    width: 90%;
+    float: left;
+}
+
+.post-content h2 {
+    font-size: 10px;
+    font-family: helvetica;
+    color: #999;
+    font-style: italic;
+    width: auto;
+
+}
+
+.post-content h3 {
+    font-size: 12px;
+    font-family: helvetica;
+    color: #999;
+    font-style: italic;
+    width: auto;
+ }
+
+.post-content p {
+    font-size: 10px;
+    font-family: helvetica;
+    color: #999;
+    font-style: italic;
+}
+
+.post-content a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+.post-content a:visited {
+    color: #551a8b;
+}
+
+.post-content a:hover 
+{
+    color: #6633FF;
+}
+
+.comment a {
+    color: #999;
+}
+
+.comment a:hover {
+    color: #ccc;
+}
+.comment a:visited {
+    color: #999;
+}
+
+.postarea {
+    width: 40%;
+    float: right;
+    border: 1px solid;
+}
+
+ 
+textarea {
+    width: 350px;
+    height: 200px;
+}
+
+.facearea {
+    width: 30%;
+    height: 30%;
+    float: left;
+    margin: 20px 0 10px 20px;
+    
+}
+
+.avatar {
+    width: 200px;
+    height: 180px;
+    background-color: #999;
+}
+
+.avatar  img {
+    position:absolute;
+    width: 200px;
+    height: 180px;
+
+}
+
+.profile-page {
+    width: 30%;
+    height: 30%;
+    float: left;
+    margin: 20px 0 10px 20px;
+}
+
+.profile-page h3 {
+    font-size: 14px;
+    color: #ccc;
+}
+.error {
+    
+}
+
+.post-content-right {
+    width: 30%;
+    height: auto;
+    float: right;
+}
+
+/* POSTBOX-delen; en liten box där de nyaste inläggen visas*/
+.postbox {
+    height: 255px;
+    margin: 20px 0 10px 0;
+    width: 100%;
+    float: right;
+    padding: 5px;
+    clear: both;
+    
+}
+
+.postbox h1 {
+    margin: 0;
+    font-size: 18px;
+    font-family: helvetica;
+    font-color: black;
+}
+
+.postbox h2 {
+    font-size: 5px;
+    font-family: helvetica;
+    color: #999     ;
+    font-style: italic;
+}
+
+.postbox a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+.postbox a:visited {
+    color: #551a8b;
+}
+
+.postingicons {
+    width: 100%;
+    height: 56px;
+    float: right;
+    padding: 5px;
+    margin: 0 0 0 0;
+}
+
+.postingicons a{
+    border-top: 1px solid #96d1f8;
+   background: #0e4366;
+   background: -webkit-gradient(linear, left top, left bottom, from(#4096cf), to(#0e4366));
+   background: -webkit-linear-gradient(top, #4096cf, #0e4366);
+   background: -moz-linear-gradient(top, #4096cf, #0e4366);
+   background: -ms-linear-gradient(top, #4096cf, #0e4366);
+   background: -o-linear-gradient(top, #4096cf, #0e4366);
+   padding: 7px 14px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 16px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+.postingicons a:hover {
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #ccc;
+}
+
+.postingicons a:active {
+   border-top-color: #1b435e;
+   background: #1b435e;    
+}
+
+
+
+/* MAIN FORM */
+.form-style-9{
+    max-width: 450px;
+    background: #FAFAFA;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid #305A72;
+}
+.form-style-9 ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.form-style-9 ul li{
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #B0CFE0;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+
+}.form-style-9 ul li  .field-style:focus{
+    box-shadow: 0 0 5px #B0CFE0;
+    border:1px solid #B0CFE0;
+}
+.form-style-9 ul li .field-split{
+    width: 49%;
+}
+.form-style-9 ul li .field-full{
+    width: 100%;
+}
+.form-style-9 ul li input.align-left{
+    float:left;
+}
+.form-style-9 ul li input.align-right{
+    float:right;
+}
+.form-style-9 ul li textarea{
+    width: 100%;
+    height: 100px;
+}
+.form-style-9 ul li input[type="button"],
+.form-style-9 ul li input[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    box-shadow: inset 0px 1px 0px 0px #3985B1;
+    background-color: #216288;
+    border: 1px solid #17445E;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 8px 18px;
+    text-decoration: none;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+.form-style-9 ul li input[type="button"]:hover,
+.form-style-9 ul li input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+    background-color: #28739E;
+}
+.form-style-9 h1 {
+    font-size: 28px;
+}
+/*END MAIN FORM*/
+
+/*COMMENT SECTION*/
+
+.comment-box {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 50%;
+    height: 2%;
+    margin: 0;
+}
+
+.comment-box h1 {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+.comment-box h2 {
+    font-size: 10px;
+    font-family: helvetica;
+    color: #999;
+    font-style: italic;
+}
+
+/* END COMMENT SECTION */
+
+.votearea {
+    width: 90px;
+    height: 20px;
+    float: left;
+    margin-left: -14px;
+}
+
+.votearea img {
+    width: 10px;
+    padding-left: 15px;
+    float: left;
+}
+
+.votearea p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    float: right;
+    padding-right: 17px;
+    margin-top: -1px;
+}
+
