@@ -245,7 +245,7 @@ function getComment() {
 	}
 }
 
-function postbox() 
+function userbox() 
 {
 	 $db = connectToDB();
 	 $query = "SELECT 
@@ -264,6 +264,8 @@ function postbox()
 		print '<h1><a href="profile.php?user=' . $row['id'] . '">' . $row['name'] . '</a><br><br></h1>'; 
 	 }
 }
+
+
 
 function addVote2($vote, $postid, $userid){
 	$db = connectToDB();

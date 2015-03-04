@@ -15,7 +15,7 @@ require_once("functions.php");
 </head>
 <body>
     <div id="menu">
-        <a class="item" href="/forum/index.php">shreddit, get it?</a> 
+        <a class="item" href="index.php">shreddit, get it?</a> 
         <div id="userbar">
         <?php loggedIn() ?>
         </div><!-- end userbar -->
