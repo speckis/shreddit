@@ -11,7 +11,7 @@ checkSession();
 if(isset($_SESSION['userdata'])) {
 	// kallar på funktionerna så att man kan rösta
 	if(isset($_GET['id'], $_GET['vote'])) {
-		addVote2($_GET['vote'], $_GET['id'], 
+		addVote($_GET['vote'], $_GET['id'], 
 			$_SESSION['userdata']['id']);
 	}
 }
@@ -29,7 +29,7 @@ if(isset($_SESSION['userdata'])) {
 	<div class="postbox">
 		<h1 style="color: #00728B; font-size: 20px;">Users</h1>
 		<br>
-		<?php postbox() ?>
+		<?php userbox() ?>
 	</div>
 </div>
 

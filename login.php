@@ -4,7 +4,7 @@ require_once ("config.php");
 require_once ("header.php");
 require_once ("functions.php");
 checkSession();
-?>
+?><h1>Login</h1>
 	<form class="form-style-9" style="width: 200px" action="login.php" method="POST">
 		<ul>
 		<li>

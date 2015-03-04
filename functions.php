@@ -265,12 +265,11 @@ function userbox()
 	 }
 }
 
-
-
-function addVote2($vote, $postid, $userid){
+// funktionen som gör att man kan rösta
+function addVote($vote, $postid, $userid){
 	$db = connectToDB();
-	$vote 	= $_GET['vote'];
-	$postid = $_GET['id'];
+	$vote 	= mysqli_real_escape_string($db, $_GET['vote']);
+	$postid = (int)$_GET['id'];
 	$userid = $_SESSION['userdata']['id'];
 
 	$query 	= "INSERT IGNORE INTO vote_id (vote, postid, userid) 
