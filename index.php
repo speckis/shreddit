@@ -17,19 +17,28 @@ if(isset($_SESSION['userdata'])) {
 }
 
 ?>
-<h1 style="color: #00728B;">Shreddit, get it?</h1>
+
 <div class="post-content-section">
+	<div class="showlist">
+	<a class="item" href="index.php">Hot</a>
+	<a class="item" href="Popular">Popular</a>
+	<a class="item" href="Popular">Newest</a>
+	<a class="item" style="float: right;" href="postlink.php">Shred</a>
+	</div>
 		<?php getPost(); ?>				
 	</div>
 <div class="post-content-right">
-	<div class="postingicons">
-			<a href="postlink.php">Posta en länk!</a><br><br>
-			<!-- <a href="posttext.php">Posta en tråd!</a>	 -->
+	<div class="searchbar">
+		<form action="index.php" method="POST">
+			<input type="text" name="search">
+			<input type="submit">
+		</form>
 	</div>
 	<div class="postbox">
-		<h1 style="color: #00728B; font-size: 20px;">Users</h1>
+		<?php searchBar();	 ?>
+		<!-- <h1 style="color: #00728B; font-size: 20px;">Users</h1>
 		<br>
-		<?php userbox() ?>
+		<?php userbox() ?> -->
 	</div>
 </div>
 

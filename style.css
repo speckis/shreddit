@@ -6,17 +6,17 @@ body {
 }
  
 #wrapper {
-    width: 900px;
+    width: 100%;
     margin: 0 auto;             /* center the page */
 }
  
 #content {
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     float: left;
-    padding: 20px 30px;
+    padding: 50px 30px;
     text-align: left;
-    width: 900px;                /* fill up the entire div */
+    width: 100%;                /* fill up the entire div */
 }
  
 #menu {
@@ -24,9 +24,7 @@ body {
     border-bottom: none;        /* avoid a double border */
     clear: both;                /* clear:both makes sure the content div doesn't float next to this one but stays under it */
     width: 100%;
-    height: 50px;
-    margin-bottom: 50px;
-    padding: 0 30px;
+    height: 100px;
     background-color: #00728B;
     text-align: left;
     font-size: 85%;
@@ -55,15 +53,27 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
- 
+
+.showlist {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
 .item {
     background-color: #00728B;  
     color: #FFF;
     font-family: Arial;
     padding: 17px;
+    width: 60px;
     float: left;
     text-decoration: none;
     text-align: center;
+    margin-left: 15px;
+}
+
+.showlist a:visited {
+    height: 100px;
 }
  
 .leftpart {
@@ -99,7 +109,7 @@ body {
     padding-top: 10px;
     padding-left: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #00728B;
     width: 100%;
     height: auto;
     float: left;
@@ -263,7 +273,7 @@ textarea {
     margin: 0 0 0 0;
 }
 
-.postingicons a{
+/*.postingicons a{
     border-top: 1px solid #96d1f8;
    background: #0e4366;
    background: -webkit-gradient(linear, left top, left bottom, from(#4096cf), to(#0e4366));
@@ -285,7 +295,7 @@ textarea {
    text-decoration: none;
    vertical-align: middle;
 }
-
+*/
 .postingicons a:hover {
     border-top-color: #28597a;
     background: #28597a;

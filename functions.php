@@ -149,6 +149,18 @@ function getPost() {
 			
 			// startar votearea diven, där man kommer kunna rösta och se antalet röster
 			print '<div class="votearea">';
+			$votecount = "SELECT 
+							vote 
+						  FROM posts 
+						  WHERE id = {$postid}";
+			$votes = mysqli_query($db, $votecount);
+
+			if(mysqli_errno($db)) {
+	 			print mysqli_error($votes);
+	 		} 
+			$count = mysqli_fetch_assoc($votes);
+
+			print '<p>'. $count['vote'] . '</p>';
 	
 			if(isset($_SESSION['userdata'])) {
 				$sessID = $_SESSION['userdata']['id'];
@@ -177,18 +189,7 @@ function getPost() {
 					alt="votedown" /></a>';
 				}
 			}
-			$votecount = "SELECT 
-							vote 
-						  FROM posts 
-						  WHERE id = {$postid}";
-			$votes = mysqli_query($db, $votecount);
 
-			if(mysqli_errno($db)) {
-	 			print mysqli_error($votes);
-	 		} 
-			$count = mysqli_fetch_assoc($votes);
-
-			print '<p>'. $count['vote'] . '</p>';
 			print '</div>';
 			print "</div><br>";
 		}		 
@@ -292,4 +293,18 @@ function validateInput($input) {
 	return $input;		
 }
 
-
+function searchBar()
+{
+	$db = connectToDB();
+	if($_SERVER['REQUEST_METHOD'] == "POST") {
+		
+		$search = $_POST['search'];
+		$query  = "SELECT name FROM user WHERE name LIKE '%{$search}%' ";
+		$result = mysqli_query($db, $query);
+		$row 	= mysqli_fetch_assoc($result);
+		
+		if($row >= 1) {
+			print $row['name'] . "<br>";
+		} 
+	}
+}
